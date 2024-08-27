@@ -2,6 +2,8 @@
 
 A modern, responsive code workbench where you can write and preview HTML, CSS, and JavaScript code in real-time. The workbench features a sleek interface with a light/dark theme toggle, tabbed navigation for different code views, and a live output preview.
 
+[Test it Live](https://romanmamrukov.github.io/webtestbench/)
+
 ## Features
 
 - **Live Preview:** See the results of your HTML, CSS, and JavaScript code as you type.
