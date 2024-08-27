@@ -1,10 +1,33 @@
+/* Global Styles */
 body {
-    display: flex;
-    flex-direction: column;
-    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    flex-direction: column;
     height: 100vh;
+}
+
+header, footer {
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.theme-toggle {
+    display: flex;
+    align-items: center;
+}
+
+.theme-toggle input {
+    margin-left: 10px;
 }
 
 .container {
@@ -12,28 +35,115 @@ body {
     flex: 1;
 }
 
-textarea {
-    flex: 1;
-    height: 100%;
-    margin: 0;
-    padding: 10px;
-    font-size: 14px;
-    font-family: monospace;
-    border: 1px solid #ccc;
-}
-
-iframe {
-    flex: 1;
-    height: 100%;
-    border: none;
-}
-
 .editor {
-    width: 50%;
+    width: 30%;
+    background-color: #f4f4f4;
+    padding: 0;
+    border-right: 1px solid #ccc;
     display: flex;
     flex-direction: column;
 }
 
-.editor textarea {
-    height: 33%;
+.tabs {
+    display: flex;
+    border-bottom: 1px solid #ccc;
+    background-color: #e9ecef;
+}
+
+.tabs button {
+    flex: 1;
+    padding: 15px;
+    background-color: transparent;
+    border: none;
+    border-bottom: 2px solid transparent;
+    cursor: pointer;
+    font-size: 16px;
+    text-align: center;
+}
+
+.tabs button.active {
+    border-bottom-color: #007bff;
+    background-color: #f9f9f9;
+}
+
+.tab-content {
+    flex: 1;
+    display: none;
+    padding: 20px;
+}
+
+.tab-content.active {
+    display: block;
+}
+
+textarea {
+    width: 100%;
+    height: 70vh;
+    font-size: 14px;
+    font-family: monospace;
+    border: none;
+    border-radius: 0;
+    resize: none;
+}
+
+.preview {
+    width: 70%;
+    padding: 5px 20px;
+}
+
+.preview p {
+    font-size: 24px;
+    margin: 0;
+}
+
+#preview {
+    width: 100%;
+    height: 95%;
+    border: none;
+    border-top: 1px solid black;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+}
+
+/* Dark Theme */
+body.dark-theme {
+    background-color: #121212;
+    color: white;
+}
+
+body.dark-theme header,
+body.dark-theme footer {
+    background-color: #1f1f1f;
+}
+
+body.dark-theme .editor {
+    background-color: #1f1f1f;
+    border-right: 1px solid #444;
+}
+
+body.dark-theme .tabs {
+    background-color: #1f1f1f;
+}
+
+body.dark-theme .tabs button {
+    color: white;
+}
+
+body.dark-theme .tabs button.active {
+    background-color: #2b2b2b;
+}
+
+body.dark-theme textarea {
+    background-color: #2b2b2b;
+    color: white;
+}
+
+body.dark-theme .preview {
+    background-color: #1f1f1f;
 }

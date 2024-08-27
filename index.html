@@ -3,18 +3,45 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Code Workbench</title>
+    <title>Website Code Workbench</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
-    <div class="container">
-        <div class="editor">
-            <textarea id="htmlCode" placeholder="Type HTML here"></textarea>
-            <textarea id="cssCode" placeholder="Type CSS here"></textarea>
-            <textarea id="jsCode" placeholder="Type JS here"></textarea>
+<body class="light-theme">
+    <header>
+        <h1>Website Code Workbench</h1>
+        <div class="theme-toggle">
+            <label for="themeSwitch">Dark Mode:</label>
+            <input type="checkbox" id="themeSwitch">
         </div>
-        <iframe id="preview"></iframe>
+    </header>
+    
+    <div class="container">
+        <aside class="editor">
+            <div class="tabs">
+                <button class="tab active" data-tab="html">HTML</button>
+                <button class="tab" data-tab="css">CSS</button>
+                <button class="tab" data-tab="js">JavaScript</button>
+            </div>
+            <div class="tab-content active" id="htmlTab">
+                <textarea id="htmlCode" placeholder="Type HTML here"></textarea>
+            </div>
+            <div class="tab-content" id="cssTab">
+                <textarea id="cssCode" placeholder="Type CSS here"></textarea>
+            </div>
+            <div class="tab-content" id="jsTab">
+                <textarea id="jsCode" placeholder="Type JavaScript here"></textarea>
+            </div>
+        </aside>
+    
+        <section class="preview">
+            <P>Output</P>
+            <iframe id="preview"></iframe>
+        </section>
     </div>
+
+    <footer>
+        <p>&copy; Website Code Workbench made by Romans & ChatGPT</p>
+    </footer>
 
     <script src="script.js"></script>
 </body>
