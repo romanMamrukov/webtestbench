@@ -8,6 +8,41 @@ body {
     height: 100vh;
 }
 
+/* General Reset for Lists */
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* Navigation Bar */
+nav {
+    background-color: #333;
+    padding: 10px 20px;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: #575757;
+}
+
+
 header, footer {
     background-color: #333;
     color: white;
@@ -83,6 +118,23 @@ textarea {
     resize: none;
 }
 
+/* Save Button */
+#saveSnippet {
+    width: 120px;
+    height: 50px;
+    font-size: 16px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#saveSnippet:hover {
+    background-color: #0056b3;
+}
+
 .preview {
     width: 70%;
     padding: 5px 20px;
@@ -147,6 +199,11 @@ body.dark-theme .preview {
     background-color: #636363;
 }
 
+body.dark-theme .card {
+    background-color: #636363;
+    color: white;
+}
+
 /* Toggle Switch */
 .switch {
     position: relative;
@@ -193,24 +250,82 @@ input:checked + .slider:before {
     transform: translateX(26px);
 }
 
+/* Code Snippets */
+.snippet-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 10px;
+}
+
+.snippet-list .card {
+    background-color: #f4f4f4;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 15px;
+    margin: 15px;
+    text-align: center;
+    width: auto;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s, transform 0.3s;
+}
+
+.snippet-list .card:hover {
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transform: scale(1.02);
+}
+
+.snippet-list .card button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.snippet-list .card button:hover {
+    background-color: #0056b3;
+}
+
 /* Mobile Styles */
 @media (max-width: 768px) {
     .container {
         flex-direction: column;
     }
 
-    .editor {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        margin-bottom: 10px;
+    }
+
+    .editor, .preview, .snippet-list {
         width: auto;
+    }
+
+    .editor {
         border: none !important;
     }
 
     .preview {
-        width: auto;
         height: 50vh;
         padding: 10px;
     }
 
     textarea {
         height: 40vh;
+    }
+    
+    #snippetContainer{
+        padding: 10px;
+    }
+
+    .snippet-list .card {
+        width: 100%;
     }
 }
