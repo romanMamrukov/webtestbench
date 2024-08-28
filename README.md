@@ -2,6 +2,8 @@
 
 A modern, responsive code workbench where you can write and preview HTML, CSS, and JavaScript code in real-time. The workbench features a sleek interface with a light/dark theme toggle, tabbed navigation for different code views, and a live output preview.
 
+[Test it Live](https://romanmamrukov.github.io/webtestbench/)
+
 ## Features
 
 - **Live Preview:** See the results of your HTML, CSS, and JavaScript code as you type.
@@ -24,12 +26,16 @@ To use the Modern Code Workbench, you just need a web browser. No additional set
 2. Navigate to the project directory:
    ```bash
    cd modern-code-workbench
-   Or
+
+Or
+
 3. Open index.html in your preferred web browser:
    ```bash
    open index.html
-   Or 
-   simply double-click the index.html file to open it.
+
+Or 
+
+Simply double-click the index.html file to open it.
 
 ### Usage
 
@@ -67,7 +73,7 @@ Contributions are welcome! If you'd like to contribute, please fork the reposito
 
 1. Fork the Project
 2. Create your Feature Branch (git checkout -b feature/AmazingFeature)
-3. Commit your Changes (git commit -m 'Add some AmazingFeature')
+3. Commit your changes (git commit -m 'Add some AmazingFeature')
 4. Push to the Branch (git push origin feature/AmazingFeature)
 5. Open a Pull Request
 
@@ -80,7 +86,6 @@ This project is licensed under the MIT License. See the LICENSE file for more de
 * Inspiration from various online code playgrounds like CodePen and JSFiddle.
 * Icons and styles inspired by modern web design trends.
 
-<br>
+---
 
 Note: This project is meant for educational purposes and to demonstrate basic web development skills. Feel free to expand upon it and use it as a foundation for more complex projects.
-
