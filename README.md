@@ -69,22 +69,13 @@ This file contains the JavaScript code that handles:
 
 ### Contributing
 
-Contributions are welcome! If you'd like to contribute, please fork the repository and use a feature branch. Pull requests are warmly welcomed.
-
-1. Fork the Project
-2. Create your Feature Branch (git checkout -b feature/AmazingFeature)
-3. Commit your changes (git commit -m 'Add some AmazingFeature')
-4. Push to the Branch (git push origin feature/AmazingFeature)
-5. Open a Pull Request
+Contributions are welcome!
 
 ### License
-
-This project is licensed under the MIT License. See the LICENSE file for more details.
 
 ### Acknowledgments
 
 * Inspiration from various online code playgrounds like CodePen and JSFiddle.
-* Icons and styles inspired by modern web design trends.
 
 ---
 
